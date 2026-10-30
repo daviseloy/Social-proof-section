@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --spacing-0: 0px;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-600: 48px;
+    --spacing-1200: 96px;
+    --purple-900: #512051;
+    --purple-300: #927B91;
+    --purple-100: #F7F2F7;
+    --white: #FFFFFF;
+    --pink: #EE69A4;
+    --orange: #EF9546;
+    --gradient: linear-gradient(to bottom right, var(--purple-900), rgb(138 67 137 / 0));
+    --text-presset-1: "League Spartan", sans-serif;
+
+}
+
+.container {
+    width: 1110px;
+    height: 568px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 116px auto 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 445px;
+    gap: 16px;
+
+    h1 {
+        font-family: var(--text-presset-1);
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 0.85;
+        letter-spacing: -2px;
+        color: var(--purple-900);
+    }
+
+    p {
+        font-family: var(--text-presset-1);
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 1.35;
+        letter-spacing: -0.6px;
+        color: var(--purple-300);
+    }
+}
+
+.rated {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+
+    .r1 {
+        padding-right: var(--spacing-1200);
+    }
+
+    .r2 {
+        padding-inline: var(--spacing-600)
+    }
+
+    .r3 {
+        padding-left: var(--spacing-1200);
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-400);
+        padding: var(--spacing-200) var(--spacing-400);
+        border-radius: 8px;
+        background: var(--purple-100);
+    }
+
+    p {
+        font-family: var(--text-presset-1);
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 1;
+        letter-spacing: 0px;
+        color: var(--purple-900);
+    }
+
+    .stars {
+        display: flex;
+        gap: var(--spacing-100);
+
+        img {
+            display: block;
+        }
+    }
+}
+
+
+.content {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.content>div {
+    width: 350px;
+    height: 256px;
+}
+
+.content .c1 {
+    padding-bottom: var(--spacing-400);
+}
+
+.c1-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14rem;
+    border-radius: 8px;
+    padding: var(--spacing-400);
+    background: var(--purple-900);
+
+    p {
+        font-family: var(--text-presset-1);
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 17px;
+        line-height: 130%;
+        letter-spacing: -0.3px;
+        color: var(--white);
+    }
+
+
+}
+
+.c1-1-1 {
+    width: 286px;
+    max-height: 160px;
+    gap: var(--spacing-400);
+}
+
+.c1-2 {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    gap: var(--spacing-300);
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+
+    .p1 {
+        font-family: var(--text-presset-1);
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 17px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: var(--white);
+    }
+
+    .p2 {
+        font-family: var(--text-presset-1);
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 17px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: var(--colors-pink-400, #EE69A4);
+    }
+}
+
+.c1-2-1 {
+    display: flex;
+    flex-direction: column;
+    width: 98px;
+    height: fit-content;
+    gap: var(--spacing-0);
+
+}
+
+.c2 {
+    width: 21.8rem;
+    height: 16rem;
+    gap: var(--spacing-0);
+    padding: var(--spacing-200) var(--spacing-0);
+}
+
+.c2-2-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: fit-content;
+    gap: var(--spacing-0);
+}
+
+.c3 {
+    width: 21.8rem;
+    height: 16rem;
+    gap: spacing/0;
+    padding: var(--spacing-400) 0 0 0;
+
+}
+
+.c3-2-1 {
+    display: flex;
+    flex-direction: column;
+    width: 104px;
+    height: fit-content;
+    gap: var(--spacing-0);
+}
+
+/*----TABLET----*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 608px;
+        height: auto;
+        max-height: none;
+        gap: var(--spacing-600);
+        margin: 118px auto 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        gap: var(--spacing-500);
+    }
+
+    .text {
+        display: flex;
+        flex: 1;
+        height: fit-content;
+        gap: var(--spacing-200);
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .rated {
+        width: 453px;
+        height: auto;
+        gap: var(--spacing-200);
+        align-items: stretch;
+    }
+
+    .rated .r1,
+    .rated .r2,
+    .rated .r3 {
+        width: 100%;
+        height: auto;
+        padding: var(--spacing-200);
+    }
+
+    .rated .card {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-100);
+    }
+
+    main {
+        width: 453px;
+        height: 44rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 453px;
+        height: auto;
+    }
+
+    .content>div {
+        width: 453px;
+        height: 224px;
+    }
+
+    .c1 {
+        height: 14rem;
+        display: flex;
+        flex: 1;
+    }
+
+    .c2 {
+        display: flex;
+        flex: 1;
+        height: 224px;
+    }
+
+    .c3 {
+        display: flex;
+        flex: 1;
+        height: 224px;
+    }
+}
+
+/*---- MOBILE ----*/
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: var(--spacing-600);
+        margin: 80px auto 0;
+        padding: 0 var(--spacing-300);
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: var(--spacing-500);
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 2.5rem;
+        line-height: 0.9;
+        letter-spacing: -1px;
+    }
+
+    .text p {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .rated {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: var(--spacing-200);
+    }
+
+    .rated .r1,
+    .rated .r2,
+    .rated .r3 {
+        width: 100%;
+        height: auto;
+        padding: var(--spacing-200);
+    }
+
+    .rated .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: var(--spacing-100);
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: var(--spacing-200);
+    }
+
+    .content>div {
+        width: 100%;
+        height: auto;
+        min-height: 246px;
+        padding: 0;
+    }
+
+    .c1,
+    .c2,
+    .c3 {
+        width: 100%;
+        height: 246px;
+        padding: var(--spacing-400);
+        gap: var(--spacing-0);
+    }
+
+    .c1-1 {
+        width: 100%;
+        height: 100%;
+        min-height: 246px;
+    }
+
+    .c1-1-1 {
+        width: 100%;
+    }
+
+    .c1-2 {
+        width: 100%;
+    }
+}
